@@ -2,15 +2,10 @@ import React from "react";
 import Logo2 from "../public/images/logos/logo-2.png";
 import Image from "next/image";
 import { FiSearch } from "react-icons/fi";
-import VideoCard from "../components/VideoCard";
-import moment from "moment";
-import { Spinner } from "../components/Loader";
+
 
 function Home() {
-  // // const { pageLoaded } = usePageLoaded(1);
-  // const error = response?.error;
-  // const respMsg = response?.msg;
-  // const data = response?.data;
+
 
   return (
     <div className="w-full h-screen overflow-y-hidden">
@@ -39,13 +34,10 @@ function Home() {
         <div className="w-full px-[4em] min-h-[15em] mt-9 flex items-start justify-start flex-col gap-4 mb-5 overflow-y-scroll">
           <p className="text-dark-200 font-ppReg text-[12px] ">Recent files</p>
           <div className="w-full flex items-center justify-start flex-wrap gap-7">
-            {pageLoaded ? (
-              <Spinner color="#000" />
-            ) : (
+              {/* <Spinner color="#000" /> */}
                 <p className="text-white-400 text-[13px] font-ppReg">
                   No recent videos.
                 </p>
-              )}
           </div>
         </div>
       </div>
